@@ -1,0 +1,1082 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/*-----------menu-------------*/
+.contenedor1 {
+    background-color: black;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: rgb(176, 122, 74);
+}
+
+.logo {
+    background-image: url("bandera.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 50px;
+}
+
+.contenedor1 h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.navegador {
+    margin-right: 40px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(176, 122, 74);
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: #4a2901;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    min-width: 180px;
+    border-radius: 15px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px 15px;
+    color: rgb(176, 122, 74);
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #666;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/*---------------titulo-------------*/
+
+.contenedor2 {    
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("moai2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;      
+
+}
+.contenedor2 h1 {
+    color: rgb(177, 115, 61);
+}
+.contenedor2 p {
+    color: rgb(177, 115, 61);
+}
+
+
+
+
+/*------------------display con movimiento--------------*/
+
+.marco{
+  width: 1100px;
+  height: 450px;
+  margin: 40px auto;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+/*---------fraja donde se mueve la imagen------------*/
+
+.franja{
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/*-------------pista en movimiento------------*/
+
+.pista{
+  display: flex;
+  width: max-content;
+  animation: mover 30s linear infinite;
+}
+
+.pista img{
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+  border-radius: 15px; /* bordes redondos */
+}
+
+/* ----------animacion -------*/
+
+@keyframes mover{
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+/*------------------------------------------------*/
+
+.contenedor3 {
+    background-color: black;
+    padding: 60px 0;
+}     
+
+.contenedor3 h1 {
+    color: rgb(177, 115, 61);    
+}
+.contenido-central {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(177, 115, 61);
+}
+
+.contenedor4 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contenedor4 p {
+    color: rgb(177, 115, 61); 
+}
+.contenedor4 h1 {
+    color: rgb(177, 115, 61); 
+}
+.caja {
+    background-image: url("vino.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+    width: 250px;
+    padding: 20px;    
+}
+.caja1 {
+    
+    width: 400px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 6px;
+}
+
+.boton2 {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.contenedor5 {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    color: rgb(176, 122, 74);
+}
+
+.contenedor5 a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/*---------------------------------------------------*/
+
+.boton {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* ------------------CONTACTO-------------- */
+
+.contacto-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("valparaiso.jpg");
+    
+}
+.contacto-banner h1,
+.contacto-banner p {
+    color: white;
+}
+
+.contenedor-contacto {
+    background-color: black;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+.formulario {
+    width: 500px;
+    background-color: #111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(177,115,61,0.3);
+}
+
+.formulario h2 {
+    color: rgb(177, 115, 61);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(177, 115, 61);
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    box-shadow: 0 0 10px rgb(177, 115, 61);
+}
+
+
+
+
+/*-----------empanadas---------------*/
+
+.empanada-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("empanada-fondo.jpg");
+}
+
+.contenedor-empanadas {
+    background-color: black;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.empanada-card {
+    background-color: #111;
+    width: 450px;   /* tarjeta más ancha */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.empanada-card img {
+    width: 100%;
+    height: 300px;   /* imagen más alta */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.empanada-card h2 {
+    color: rgb(177, 115, 61);
+    margin-top: 15px;
+}
+
+.empanada-card p {
+    color: rgb(177, 115, 61);
+    font-size: 14px;
+}
+
+.contenedor2 {
+    text-align: center;
+}
+
+.contenedor2 h1 {
+    color: rgb(177, 115, 61);
+    margin-bottom: 20px;
+}
+
+.contenedor2 p {
+    color: rgb(177, 115, 61);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;   /* mejora lectura */
+    font-size: 16px;
+}
+
+/* ------------animacion empanadas --------------------------------= */
+
+.contenedor-empanadas {
+    transform: translateY(150px); /* empiezan un poco abajo */
+    opacity: 0;                   /* empiezan invisibles */
+    animation: subirEmpanadas 1.8s ease-out forwards;
+}
+
+@keyframes subirEmpanadas {
+    to {
+        transform: translateY(0); /* vuelven a su posición normal */
+        opacity: 1;               /* aparecen */
+    }
+}
+
+/* --------------------mariscos------------------ */
+
+.mariscos-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("mariscoss.jpg");
+}
+
+.contenedor-mariscos {
+    background-color: black;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.marisco-card {
+    background-color: #111;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.marisco-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.marisco-card h2 {
+    color: rgb(177, 115, 61);
+    margin-top: 15px;
+}
+
+.marisco-card p {
+    color: rgb(177, 115, 61);
+    font-size: 14px;
+}
+
+/* -------------------animacion mariscos-----------------------------*/
+
+.contenedor-mariscos {
+    transform: translateY(150px); /* empiezan un poco abajo */
+    opacity: 0;                   /* empiezan invisibles */
+    animation: subirEmpanadas 1.8s ease-out forwards;
+}
+
+
+
+@keyframes subirMariscos {
+    to {
+        transform: translateY(0); /* vuelven a su posición normal */
+        opacity: 1;               /* aparecen */
+    }
+}
+
+
+
+/*------------------------------- postres---------------------------*/
+
+.banner-postres {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("postress.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-postres h1 {
+    color: rgb(177, 115, 61);
+    margin-bottom: 15px;
+}
+
+.banner-postres p {
+    color: rgb(177, 115, 61);
+    max-width: 700px;
+}
+
+
+.seccion-postres {
+    background-color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titulo-postres {
+    color: rgb(177, 115, 61);
+    margin-bottom: 40px;
+}
+
+.fila-postres {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.postre {
+    background-color: #111;
+    width: 250px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.postre img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.postre h3 {
+    color: rgb(177, 115, 61);
+    margin-top: 15px;
+}
+
+.postre p {
+    color: rgb(177, 115, 61);
+    font-size: 14px;
+}
+
+/* ----------------animacion postres----------*/
+
+.fila-postres {
+    transform: translateY(150px); /* empiezan abajo */
+    opacity: 0;
+    animation: subirPostres 1.8s ease-out forwards;
+}
+
+@keyframes subirPostres {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* -----------------bebidas--------------*/
+
+.banner-bebidas {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("vinoss.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-bebidas h1 {
+    color: rgb(177, 115, 61);
+}
+
+.banner-bebidas p {
+    color: rgb(177, 115, 61);
+    max-width: 700px;
+}
+
+.seccion-bebidas {
+    background-color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.fila-bebidas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.bebida {
+    background-color: #111;
+    width: 260px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.bebida img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.bebida h3 {
+    color: rgb(177, 115, 61);
+    margin-top: 15px;
+}
+
+.bebida p {
+    color: rgb(177, 115, 61);
+    font-size: 14px;
+}
+
+/* ---------------------animacion----------------------*/
+
+.seccion-bebidas {
+    transform: translateY(150px); /* empiezan abajo */
+    opacity: 0;
+    animation: subirPostres 1.8s ease-out forwards;
+}
+
+@keyframes subirBebidas {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* --------------platos principales---------------------*/
+
+.banner-principales {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("cocina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-principales h1 {
+    color: rgb(177, 115, 61);
+}
+
+.banner-principales p {
+    color: rgb(177, 115, 61);
+    max-width: 700px;
+}
+
+.seccion-principales {
+    background-color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.fila-principales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    max-width: 950px;   /* controla el ancho total */
+    margin: 40px auto 0 auto;
+}
+
+.plato-principal {
+    background-color: #111;
+    width: 280px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.plato-principal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.plato-principal h3 {
+    color: rgb(177, 115, 61);
+    margin-top: 15px;
+}
+
+.plato-principal p {
+    color: rgb(177, 115, 61);
+    font-size: 14px;
+}
+
+/* ---------------animacion -----------------------*/
+
+.plato-principal.izquierda {
+    transform: translateX(-250px);
+    opacity: 0;
+    animation: moverIzquierda 1.5s ease-out forwards;
+}
+
+.plato-principal.derecha {
+    transform: translateX(250px);
+    opacity: 0;
+    animation: moverDerecha 1.5s ease-out forwards;
+}
+
+@keyframes moverIzquierda {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moverDerecha {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* --------------- historia-------------------------*/
+
+.banner-historia {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("historia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.banner-historia h1 {
+    color: rgb(177, 115, 61);
+}
+
+.banner-historia p {
+    color: rgb(177, 115, 61);
+    max-width: 700px;
+}
+
+.seccion-historia {
+    background-color: black;
+    padding: 60px 20px;
+}
+
+.contenido-historia {
+    max-width: 900px;
+    margin: auto;
+    color: rgb(177, 115, 61);
+    line-height: 1.6;
+}
+.contenido-historia p {
+    text-align: justify;
+}
+
+.bloque-historia {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 8px;
+}
+
+
+
+/* animacion -------------------------*/
+
+.layout-historia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.imagen-lateral {
+    width: 20%;
+}
+
+.imagen-lateral img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contenido-historia {
+    width: 60%;
+}
+
+/* =animacion imagenes laterales-------------------*/
+
+.izquierda-img {
+    transform: translateX(-300px);
+    opacity: 0;
+    animation: entrarIzq 1.5s ease-out forwards;
+}
+
+.derecha-img {
+    transform: translateX(300px);
+    opacity: 0;
+    animation: entrarDer 1.5s ease-out forwards;
+}
+
+@keyframes entrarIzq {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrarDer {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* -------------------recetas-------------------------*/
+
+.banner-recetas {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("recetas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-recetas h1 {
+    color: rgb(177, 115, 61);
+}
+
+.seccion-recetas {
+    background-color: black;
+    padding: 60px 20px;
+}
+
+.receta {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+    color: rgb(177, 115, 61);
+}
+
+.receta h2 {
+    margin-bottom: 20px;
+}
+
+.receta-contenido {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ingredientes,
+.preparacion {
+    width: 45%;
+}
+
+.ingredientes ul {
+    padding-left: 20px;
+}
+
+.preparacion ol {
+    padding-left: 20px;
+}
+
+.preparacion p {
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+    .ingredientes,
+    .preparacion {
+        width: 100%;
+    }
+}
+
+
+
+.categoria-recetas {
+    margin: 60px 0 30px 0;
+    text-align: center;
+}
+
+.categoria-recetas h2 {
+    color: rgb(177, 115, 61);
+    border-bottom: 2px solid rgb(177, 115, 61);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* galeria-----------------------------------------*/
+
+.banner-galeria {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("llamas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-galeria h1 {
+    color: rgb(177, 115, 61);
+}
+
+.seccion-galeria {
+    background-color: black;
+    padding: 60px 20px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+/* agrandar al pulsar---------------------------------- */
+
+.grid-galeria img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-galeria img:active {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+/*--------------------- medias----------------*/
+
+/* Responsive */
+@media (max-width: 900px) {
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* -------------------TABLET 900px--------------*/
+
+
+@media (max-width: 900px) {
+
+    .marco,
+    .contenido-central {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .layout-historia {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen-lateral {
+        width: 60%;
+    }
+
+    .contenido-historia {
+        width: 100%;
+    }
+
+    .receta-contenido {
+        flex-direction: column;
+    }
+
+    .ingredientes,
+    .preparacion {
+        width: 100%;
+    }
+
+    .fila-principales {
+        max-width: 100%;
+    }
+
+}
+
+
+
+/* ----------------movil-------------------*/
+
+
+@media (max-width: 768px) {
+
+    
+    .contenedor1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navegador {
+        margin-right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu > li > a {
+        padding: 12px;
+    }
+
+    .submenu {
+        position: static;
+        border-radius: 0;
+    }
+
+    /* marco movimiento */
+    .marco {
+        width: 95%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .pista img {
+        width: 220px;
+        height: 160px;
+    }
+
+    /* tarjetas generales */
+    .empanada-card,
+    .marisco-card,
+    .postre,
+    .bebida,
+    .plato-principal {
+        width: 90%;
+    }
+
+    /* formulario */
+    .formulario {
+        width: 90%;
+        padding: 25px;
+    }
+
+    /* contenedores flex */
+    .contenedor4,
+    .contenedor-mariscos,
+    .contenedor-empanadas,
+    .fila-postres,
+    .fila-bebidas,
+    .fila-principales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* galeia*/
+    .grid-galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* -------MOBILE 480px ------ */
+
+
+@media (max-width: 480px) {
+
+    .contenedor2 h1,
+    .banner-postres h1,
+    .banner-bebidas h1,
+    .banner-principales h1,
+    .banner-historia h1,
+    .banner-recetas h1,
+    .banner-galeria h1 {
+        font-size: 22px;
+    }
+
+    .contenedor2 p,
+    .banner-postres p,
+    .banner-bebidas p,
+    .banner-principales p,
+    .banner-historia p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .pista img {
+        width: 180px;
+        height: 140px;
+    }
+
+}
